@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Family Fitness Homepage</title>
+      <!--       
+         Filename: home.html
+         Author:   Erin Dixon
+      -->
+	  <meta charset="utf-8">
+	  <meta name="description" content="Family Fitness provides a safe, friendly environment for you and your family to
+	  exercise and participate in community activities. Sign up online today!">
+	  <meta name="viewport" content="width=device-width">
+	  <link rel="stylesheet" href="ff-styles.css">
+	</head>
+	<body>
+	<div id="page">
+	<div id="topbar">
+		<div id="hours">
+		6AM - 10PM Weekdays<br>10AM - 6PM Weekends
+		</div>
+		<div id="address">
+		124 Lorem Ipsum Ave <br> Papertown, IN, 46032
+		</div>
+	</div><!--end topbar-->
+	
+	<div id="logobox">
+	<a href="home.html"><img src="images/ff-logo.jpg" alt="Family Fitness"></a>
+	</div><!--end logobox-->
+	
+	<div id="navbar">
+		<a href="home.html">HOME</a>
+		<div class="dropdown-parent">
+			<a href="pool.html">POOL</a>
+			<div class="dropdown-child">
+				<a href="pool-indoor.html">INDOOR POOL</a>
+				<a href="pool-outdoor.html">OUTDOOR POOL</a>
+			</div>
+		</div>
+		<div class="dropdown-parent">
+			<a href="gym.html">GYM</a>
+			<div class="dropdown-child">
+				<a href="gym-weight-room.html">WEIGHT ROOM</a>
+				<a href="gym-classes.html">FITNESS CLASSES</a>
+			</div>
+		</div>
+		<div class="dropdown-parent">
+			<a href="daycare.html">DAYCARE</a>
+			<div class="dropdown-child">
+				<a href="daycare-preschool.html">PRESCHOOL</a>
+				<a href="daycare-after.html">AFTER SCHOOL</a>
+			</div>
+		</div>
+		<a href="Membership.html">MEMBERSHIP</a>
+	</div><!--end navbar-->
+	
+	<div id="slideshow">
+			<br>
+			<img class="slide" src="images/ff-pool.jpg">
+			<img class="slide" src="images/ff-study.jpg">
+			<img class="slide" src="images/ff-rope.jpg">
+
+			<script>
+			var slideIndex = 0;
+			carousel();
+
+			function carousel() {
+			var i;
+			var x = document.getElementsByClassName("slide");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none"; 
+			}
+			slideIndex++;
+			if (slideIndex > x.length) {slideIndex = 1} 
+			x[slideIndex-1].style.display = "block"; 
+			setTimeout(carousel, 3000); // Change image every 2 seconds
+			}
+			</script>
+	</div><!--end slideshow-->
+	
+	<div class="textbox">
+	<h1>~UPCOMING EVENTS~<h1>
+	<p>We will remain open on the 4th of July. Come celebrate at the outdoor pool with
+	hotdogs and music!</p>
+	</div>
+	<div class="textbox">
+	<h1>OUR MISSION</h1>
+	<p>Our mission at Family Fitness has been the same since we were founded in 1983: 
+	to promote a close-knit community of families who share a passion for wellness. Over the
+	 years we have strived to provide the best in education and facilities so that you and your
+	  family can achieve your personal health goals in a safe, fun evironment. This commitment to
+	 excellence is why we have been the number 1 place for personal training and early childhood 
+	 education in Papertown for 14 years running!<br> Thank you for choosing Family Fitness
+	</div><!--end textbox-->
+	
+	<div id="footer">
+	<p>Copyright Family Fitness LLC, 2015<p>
+	</div><!--end footer-->
+	</div><!--end page-->
+	</body>
+</html>
